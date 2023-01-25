@@ -4,6 +4,8 @@ void main() {
   //  a search algorithm that uses Fibonacci numbers to find the position of the target element.
   // It has a time complexity of O(log n) in the average and worst-case scenario
   List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  print(fibonacciSearch(numbers, 7)); // Output: 6
+}
 
 int fibonacciSearch(List<int> list, int target) {
   int fib2 = 0; // (m-2)'th Fibonacci No.
@@ -38,8 +40,4 @@ int fibonacciSearch(List<int> list, int target) {
     return offset + 1;
   }
   return -1;
-}
-
-print(fibonacciSearch(numbers, 7)); // Output: 6
-
 }

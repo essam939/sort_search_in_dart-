@@ -5,6 +5,9 @@ void  main() {
   // within that block. It has a time complexity of O(√n) in the average and worst-case scenario.
   List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+print(jumpSearch(numbers, 7)); // Output: 6
+}
+
 int jumpSearch(List<int> list, int target) {
   int blockSize = (sqrt(list.length)).toInt();
   int start = 0;
@@ -24,8 +27,4 @@ int jumpSearch(List<int> list, int target) {
     }
   }
   return -1;
-}
-
-print(jumpSearch(numbers, 7)); // Output: 6
-
 }

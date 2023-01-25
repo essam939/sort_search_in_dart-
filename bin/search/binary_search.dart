@@ -1,9 +1,10 @@
-void main() {
+ main() {
   //  a search algorithm that takes advantage of the ordered nature of the data and repeatedly
   // divides the search interval in half. It has a time complexity of O(log n) in the average 
   //and worst-case scenario.
   List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
+  print(binarySearch(numbers, 7)); // Output: 6
+}
   int binarySearch(List<int> list, int target) {
     int low = 0;
     int high = list.length - 1;
@@ -20,6 +21,3 @@ void main() {
     }
     return -1;
   }
-
-  print(binarySearch(numbers, 7)); // Output: 6
-}

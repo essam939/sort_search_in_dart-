@@ -2,7 +2,7 @@ void main() {
   // Interpolation search: a search algorithm that uses the value of the target element 
   //and the value of the elements at the corners of the array to estimate the position of the target 
   //element. It has a time complexity of O(log log n)
-
+// https://www.youtube.com/watch?v=TuT_Oq1DhOM&list=PLIjLGHnioqmYZ_nAYqhO2x_2fW9hHZDWz&index=15&ab_channel=AbdulWahabAlmestekawy
   List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 int interpolationSearch(List<int> list, int target) {
